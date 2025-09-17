@@ -1,13 +1,14 @@
 from itertools import combinations
 
 def F(x):
-    P = 25 <= x <= 64
-    Q = 40 <= x <= 115
+    P = 13 <= x <= 21
+    Q = 17 <= x <= 30
+    R = 24 <= x <= 38
     A = a1 <= x <= a2
-    return P <= ((Q and (not A)) <= (not P))
+    return (not (Q <= (P or R))) <= ((not A) <= (not Q))
 
 
-Ox = [i/4 for i in range(24*4, 116*4)]
+Ox = [i/8 for i in range(12*8, 39*8)]
 
 arr = []
 for a1, a2 in combinations(Ox, 2):
