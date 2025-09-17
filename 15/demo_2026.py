@@ -14,4 +14,4 @@ for a1, a2 in combinations(Ox, 2):
         arr.append(a2-a1)
 
 print(arr)
-print(min(arr), len(arr))
+print(min(arr))
