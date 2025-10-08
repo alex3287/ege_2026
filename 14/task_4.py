@@ -6,7 +6,6 @@ def count_0(number):
         number //= 11
     return cnt
 
-
 for x in range(1, 3001):
     number = 9*11**210 + 8*11**150 - x
     if count_0(number) == 60:

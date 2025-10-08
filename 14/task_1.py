@@ -1,4 +1,3 @@
-
 for x in range(5, 37):
     num_1 = int('144', x)
     num_2 = int('24', x)

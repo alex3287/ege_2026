@@ -14,8 +14,8 @@ print(ABC)
 def ten_to_25(number):
     result = ''
     while number:
-        result = ABC[number%25] + result
+        result = ABC[number % 25] + result
         number //= 25
     return result
 
-print(ten_to_25(24))
+print(ten_to_25(255))
